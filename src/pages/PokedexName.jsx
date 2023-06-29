@@ -6,7 +6,7 @@ const PokedexName = () => {
 
   const { name } = useParams()
 
-  const url = `https:/pokeapi.co/api/v2/pokemon/${name}`
+  const url = `https://pokeapi.co/api/v2/pokemon/${name}`
   const [ pokemon, getPokemonByName, hasError ] = useFetch(url)
 
   useEffect(() => {
