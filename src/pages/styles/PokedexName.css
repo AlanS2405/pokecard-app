@@ -93,13 +93,13 @@
     overflow: visible;
 }
 
-.pokemon_id {
-    color: currentColor;
-}
-
 .pokemon_name{
     text-transform: capitalize;
-    color: currentColor;
+    color: rgb(219, 219, 219);
+}
+
+.pokemon_id {
+    color: rgb(219, 219, 219);
 }
 
 .pokemon_size {
@@ -113,6 +113,7 @@
     flex-direction: column;
     text-align: center;
     gap: 0.3em;
+    color: rgb(219, 219, 219);
 }
 
 .pokemon_height {
@@ -120,6 +121,7 @@
     flex-direction: column;
     text-align: center;
     gap: 0.3em;
+    color: rgb(219, 219, 219);
 }
 
 .pokemon_info {
@@ -131,12 +133,15 @@
 
 .types_container{
     width: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
     text-align: center;
     text-transform: capitalize;
+}
+
+.types_container h3 {
+    color: rgb(219, 219, 219);
 }
 
 .pokemon_types {
@@ -156,7 +161,7 @@
     min-width: 120px;
     max-width: 150px;
     border-radius: 1em;
-    background-color: rgba(255, 255, 255, 0.274);
+    color: black;
 }
 
 .abilities_container {
@@ -167,6 +172,10 @@
     flex-direction: column;
     gap: 1.5em;
     text-transform: capitalize;
+}
+
+.abilities_container h3 {
+    color: rgb(219, 219, 219);
 }
 
 .pokemon_abilities {
@@ -201,6 +210,10 @@
     background-color: rgb(21, 21, 21);
 }
 
+.second_section h2 {
+    color: rgb(219, 219, 219);
+}
+
 .stat_list {
     width: 100%;
     display: flex;
@@ -222,6 +235,11 @@
 
 .stat_name {
     text-transform: uppercase;
+    color: rgb(219, 219, 219);
+}
+
+.stat_value {
+    color: rgb(219, 219, 219);
 }
 
 .statBar_father {
@@ -279,4 +297,148 @@
 
 .pokedexName_footer_img{
     width: 100%;
+}
+
+/*------------------------------------------------------------TYPES COLORS*/
+
+.normal {
+    background: rgb(201, 175, 152);
+}
+
+.bg-normal {
+    background:linear-gradient(0deg, rgba(111,88,54,1) 30%, rgba(255,203,222,1) 95%);
+}
+
+.fighting {
+    background: rgb(255, 170, 101);
+}
+
+.bg-fighting {
+    background: linear-gradient(0deg, rgba(163,83,17,1) 30%, rgba(255,172,109,1) 100%);
+}
+
+.flying {
+    background: rgb(0, 131, 17);
+}
+
+.bg-flying {
+    background: linear-gradient(0deg, rgba(131,131,131,1) 30%, rgba(255,255,255,1) 95%);
+}
+
+.poison {
+    background: rgb(162, 62, 255);
+}
+
+.bg-poison {
+    background: linear-gradient(0deg, rgba(45,0,94,1) 30%, rgba(157,52,255,1) 95%);}
+
+.ground {
+    background: rgb(240, 208, 103);
+}
+
+.bg-ground {
+    background: linear-gradient(0deg, rgba(135,106,25,1) 30%, rgba(255,205,115,1) 100%);
+}
+
+.rock {
+    background: rgb(214, 156, 48);
+}
+
+.bg-rock {
+    background: linear-gradient(0deg, rgba(98,60,24,1) 30%, rgba(237,125,20,1) 100%);
+}
+
+.bug {
+    background: rgb(66, 180, 0);
+}
+
+.bg-bug {
+    background: linear-gradient(0deg, rgba(80,190,0,1) 30%, rgba(0,255,154,1) 95%);}
+
+.ghost {
+    background: rgb(170, 113, 224);
+}
+
+.bg-ghost {
+    background: linear-gradient(0deg, rgba(88,59,117,1) 30%, rgba(169,111,255,1) 100%);
+}
+.steel {
+    background: rgb(190, 192, 190);
+}
+
+.bg-steel {
+    background: linear-gradient(0deg, rgba(113,112,113,1) 30%, rgba(216,216,216,1) 100%);
+}
+
+.fire {
+    background: rgb(255, 30, 0);
+}
+
+.bg-fire {
+    background: linear-gradient(0deg, rgba(190,51,0,1) 18%, rgba(255,244,0,1) 100%);
+}
+
+.water {
+    background: rgb(0, 122, 131);
+}
+
+.bg-water {
+    background: linear-gradient(0deg, rgba(0,58,190,1) 30%, rgba(0,241,255,1) 95%);
+
+}
+
+.grass {
+    background: rgb(32, 151, 48);
+}
+
+.bg-grass {
+    background: linear-gradient(180deg, rgb(118, 255, 232) 43%, rgb(102, 230, 119) 100%);
+}
+
+.electric {
+    background: rgb(255, 224, 47);
+}
+
+.bg-electric {
+    background: linear-gradient(0deg, rgba(166,113,0,1) 30%, rgba(247,255,52,1) 100%);
+}
+
+.psychic {
+    background: rgb(209, 76, 191);
+}
+
+.bg-psychic {
+    background: linear-gradient(0deg, rgba(124,39,124,1) 30%, rgba(233,58,213,1) 100%);
+}
+
+.ice {
+    background: rgb(52, 120, 165);
+}
+
+.bg-ice {
+    background: linear-gradient(0deg, rgba(15,84,146,1) 30%, rgba(66,182,252,1) 100%);
+}
+
+.dragon {
+    background: rgb(81, 39, 129);
+}
+
+.bg-dragon {
+    background: linear-gradient(0deg, rgba(34,13,70,1) 30%, rgba(161,94,255,1) 100%);
+}
+
+.dark {
+    background: rgb(54, 56, 54);
+}
+
+.bg-dark {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(53,52,54,1) 100%);
+}
+
+.fairy {
+    background: rgb(255, 158, 195);
+}
+
+.bg-fairy {
+    background: linear-gradient(0deg, rgba(209,86,136,1) 30%, rgba(255,158,194,1) 100%);
 }

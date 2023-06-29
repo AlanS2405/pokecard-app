@@ -12,6 +12,8 @@ const PokedexName = () => {
   useEffect(() => {
     getPokemonByName()
   }, [name])
+
+  console.log(pokemon);
   
   return (
       <article className="pokedexName_main">
@@ -51,8 +53,8 @@ const PokedexName = () => {
                   alt="pokémon-img"
                 />
               </div>
-              <h2 className="pokemon_id">#{pokemon?.id}</h2>
-              <h2 className="pokemon_name">{pokemon?.name}</h2>
+              <h2 className={`pokemon_id`}>#{pokemon?.id}</h2>
+              <h2 className={`pokemon_name`}>{pokemon?.name}</h2>
               <ul className="pokemon_size">
                 <li className="pokemon_weight">
                   <span>Weight</span>
@@ -68,7 +70,7 @@ const PokedexName = () => {
                   <h3>Type</h3>
                   <div className="pokemon_types">
                     {pokemon?.types.map((typeInfo) => (
-                      <li className="type {typeInfo.type.name}" key={typeInfo.type.url}>{typeInfo.type.name}</li>
+                      <li className={`type ${typeInfo.type.name}`} key={typeInfo.type.url}>{typeInfo.type.name}</li>
                     ))}
                   </div>
                 </li>
