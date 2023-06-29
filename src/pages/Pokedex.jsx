@@ -16,9 +16,9 @@ const Pokedex = () => {
   const trainerName = useSelector(states => states.trainerName)
 
   let url = `https://pokeapi.co/api/v2/pokemon/?offset=${currentPage}&limit=${cardsPerPage}`
-  const [ pokemons, getAllPokemons, setPokemons ] = useFetch(url)
+  const [ pokemons, getAllPokemons, hasError, setPokemons ] = useFetch(url)
 
-  const urlTypes = `https://pokeapi.co/api/v2/type/?offset=${currentPage}&limit=${cardsPerPage}`
+  const urlTypes = `https://pokeapi.co/api/v2/type`
   const [types, getAllTypes] = useFetch(urlTypes)
   
     // Change page
@@ -59,7 +59,6 @@ const Pokedex = () => {
   const handleChangeType = e => {
     setSelectValue(e.target.value)
   }
-
 
   const handleCardsPerPage = (e) => {
     setCardsPerPage(e.target.value)
