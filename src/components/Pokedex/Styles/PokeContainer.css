@@ -1,0 +1,17 @@
+.pokeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12em;
+    background-color: rgb(21, 21, 21);
+}
+
+.cards_container {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 2em;
+}

@@ -1,0 +1,99 @@
+.pokedex_header {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+}
+
+.header_pokedex_img {
+    height: 70px;
+    object-fit: cover;
+}
+
+.logo_pokedex {
+    position: absolute;
+    top: 5%;
+    left: 0.7em;
+    width: 60%;
+    max-width: 275px;
+}
+
+.pokebola_img {
+    position: absolute;
+    top: 45%;
+    right: 1.2%;
+    width: 11%;
+    max-width: 85px;
+}
+
+.search_bar {
+    width: 100%;
+    background-color: rgb(22, 21, 21);
+    border-bottom: solid 1px rgb(22, 21, 21);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 9%;
+    z-index: 1000;
+}
+
+.greetings {
+    position: fixed;
+    top: 2.4em;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline #E31E24;
+}
+
+.greetings span {
+    color: #E31E24;
+}
+
+.input_pokedex {
+    margin-top: 4em;
+    height: 30px;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.3em;
+    border: solid 1px rgb(22, 21, 21);
+}
+
+.btn_pokedex {
+    margin-top: 4em;
+    height: 34px;
+    width: 10%;
+    min-width: 50px;
+    border: solid 2px black;
+    background-color: #E31E24;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.type_list_pokedex {
+    height: 33px;
+    width: 10%;
+    min-width: 65px;
+    margin: 4.3em 0 0 0.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.cardsPerPage_list_pokedex {
+    height: 33px;
+    width: 13%;
+    min-width: 65px;
+    margin: 4.3em 0 0 0.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5em;
+}

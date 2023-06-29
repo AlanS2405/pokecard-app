@@ -1,0 +1,83 @@
+.pages_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: rgb(21, 21, 21);
+    color: #E31E24;
+    font-weight: 700;
+    padding-top: 2em;
+}
+
+.page_navigator {
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em 0 3em 0;
+}
+
+.pagination {
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    margin: 1em;
+}
+
+.pagination::-webkit-scrollbar {
+    border-radius: 1em;
+    height: 18px;
+}
+
+.pagination::-webkit-scrollbar-track {
+    background-color: rgba(58, 58, 58, 0.466);
+    border-radius: 1em;
+}
+
+.pagination::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    width: 80px;
+    background-color: #E31E24;
+    cursor: pointer;
+}
+
+.page_item {
+    color: #E31E24;
+    cursor: pointer;
+    padding: 0.3em;
+    font-size: 1.2em;
+}
+
+.bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx-arrow-to-left {
+    font-size: 4em;
+    color: #E31E24;
+    cursor: pointer;
+}
+
+.bx-left-arrow {
+    font-size: 3em;
+    color: #E31E24;
+    cursor: pointer;
+}
+
+.bx-right-arrow {
+    font-size: 3em;
+    color: #E31E24;
+    cursor: pointer;
+}
+
+.bx-arrow-to-right {
+    font-size: 4em;
+    color: #E31E24;
+    cursor: pointer;
+}

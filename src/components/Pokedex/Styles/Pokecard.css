@@ -1,0 +1,245 @@
+.pokecard {
+    width: 100%;
+    max-width: 320px;
+    font-size: 1rem;
+    border-radius: 0.8em;
+    border: 0.5em solid currentColor;
+    cursor: pointer;
+    transition: transform 150ms ease;
+}
+
+.pokecard:hover {
+    transform: scale(1.05);
+}
+
+.pokecard_header {
+    aspect-ratio: 2;
+    position: relative;
+    background-color: currentColor;
+}
+
+.pokecard_img {
+    position: absolute;
+    width: 65%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokecard_body {
+    padding-top: 3em;
+    background-color: black;
+}
+
+.pokecard_name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    background-color: black;
+}
+
+.pokecard_types {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+    background-color: black;
+}
+
+.pokecard_types_item {
+    text-transform: capitalize;
+    position: relative;
+    background-color: black;
+}
+
+.pokecard_types_item:nth-child(2)::before{
+    content: '/';
+    position: absolute;
+    left: -1em;
+}
+
+.pokecard_types_item:first-child::before {
+    content: '';
+}
+
+.pokecard_footer {
+
+}
+
+.pokecard_stats {
+    padding: 2em 1em 1em 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    justify-items: center;
+    align-items: last baseline;
+    text-align: center;
+    background-color: black;
+}
+
+.pokecard_stats_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+    background-color: black;
+}
+
+.pokecard_stats_name {
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.pokecard_stats_value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: black;
+}
+
+/*------------------------------------------------------------TYPES COLORS*/
+
+.normal {
+    color: rgb(201, 175, 152);
+}
+
+.bg-normal {
+    background:linear-gradient(0deg, rgba(111,88,54,1) 30%, rgba(255,203,222,1) 95%);
+}
+
+.fighting {
+    color: rgb(255, 170, 101);
+}
+
+.bg-fighting {
+    background: linear-gradient(0deg, rgba(163,83,17,1) 30%, rgba(255,172,109,1) 100%);
+}
+
+.flying {
+    color: rgb(0, 131, 17);
+}
+
+.bg-flying {
+    background: linear-gradient(0deg, rgba(131,131,131,1) 30%, rgba(255,255,255,1) 95%);
+}
+
+.poison {
+    color: rgb(162, 62, 255);
+}
+
+.bg-poison {
+    background: linear-gradient(0deg, rgba(45,0,94,1) 30%, rgba(157,52,255,1) 95%);}
+
+.ground {
+    color: rgb(240, 208, 103);
+}
+
+.bg-ground {
+    background: linear-gradient(0deg, rgba(135,106,25,1) 30%, rgba(255,205,115,1) 100%);
+}
+
+.rock {
+    color: rgb(214, 156, 48);
+}
+
+.bg-rock {
+    background: linear-gradient(0deg, rgba(98,60,24,1) 30%, rgba(237,125,20,1) 100%);
+}
+
+.bug {
+    color: rgb(66, 180, 0);
+}
+
+.bg-bug {
+    background: linear-gradient(0deg, rgba(80,190,0,1) 30%, rgba(0,255,154,1) 95%);}
+
+.ghost {
+    color: rgb(170, 113, 224);
+}
+
+.bg-ghost {
+    background: linear-gradient(0deg, rgba(88,59,117,1) 30%, rgba(169,111,255,1) 100%);
+}
+.steel {
+    color: rgb(190, 192, 190);
+}
+
+.bg-steel {
+    background: linear-gradient(0deg, rgba(113,112,113,1) 30%, rgba(216,216,216,1) 100%);
+}
+
+.fire {
+    color: rgb(255, 30, 0);
+}
+
+.bg-fire {
+    background: linear-gradient(0deg, rgba(190,51,0,1) 18%, rgba(255,244,0,1) 100%);
+}
+
+.water {
+    color: rgb(0, 122, 131);
+}
+
+.bg-water {
+    background: linear-gradient(0deg, rgba(0,58,190,1) 30%, rgba(0,241,255,1) 95%);
+
+}
+
+.grass {
+    color: rgb(32, 151, 48);
+}
+
+.bg-grass {
+    background: linear-gradient(180deg, rgb(118, 255, 232) 43%, rgb(102, 230, 119) 100%);
+}
+
+.electric {
+    color: rgb(255, 224, 47);
+}
+
+.bg-electric {
+    background: linear-gradient(0deg, rgba(166,113,0,1) 30%, rgba(247,255,52,1) 100%);
+}
+
+.psychic {
+    color: rgb(209, 76, 191);
+}
+
+.bg-psychic {
+    background: linear-gradient(0deg, rgba(124,39,124,1) 30%, rgba(233,58,213,1) 100%);
+}
+
+.ice {
+    color: rgb(52, 120, 165);
+}
+
+.bg-ice {
+    background: linear-gradient(0deg, rgba(15,84,146,1) 30%, rgba(66,182,252,1) 100%);
+}
+
+.dragon {
+    color: rgb(81, 39, 129);
+}
+
+.bg-dragon {
+    background: linear-gradient(0deg, rgba(34,13,70,1) 30%, rgba(161,94,255,1) 100%);
+}
+
+.dark {
+    color: rgb(54, 56, 54);
+}
+
+.bg-dark {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(53,52,54,1) 100%);
+}
+
+.fairy {
+    color: rgb(255, 158, 195);
+}
+
+.bg-fairy {
+    background: linear-gradient(0deg, rgba(209,86,136,1) 30%, rgba(255,158,194,1) 100%);
+}
